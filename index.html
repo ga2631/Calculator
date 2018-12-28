@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/master.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <form name="form">
+            <input class="view" name="view" disabled="disabled" value="0">
+        </form>
+        <div class="keyboard">
+            <div class="row">
+                <input class="btn" type="button" value="C" onclick="clean()">
+                <input class="btn" type="button" value="Del" onclick="back()">
+                <input class="btn" type="button" value="x" onclick="insert('*')">
+                <input class="btn" type="button" value="/" onclick="insert('/')">
+            </div>
+            <div class="row">
+                <input class="btn" type="button" value="7" onclick="insert(7)">
+                <input class="btn" type="button" value="8" onclick="insert(8)">
+                <input class="btn" type="button" value="9" onclick="insert(9)">
+                <input class="btn" type="button" value="+" onclick="insert('+')">
+            </div>
+            <div class="row">
+                <input class="btn" type="button" value="4" onclick="insert(4)">
+                <input class="btn" type="button" value="5" onclick="insert(5)">
+                <input class="btn" type="button" value="6" onclick="insert(6)">
+                <input class="btn" type="button" value="-" onclick="insert('-')">
+            </div>
+            <div class="row">
+                <div class="col">
+                    <input class="btn" type="button" value="1" onclick="insert(1)">
+                    <input class="btn" type="button" value="0" onclick="insert(0)">
+                </div>
+                <div class="col">
+                    <input class="btn" type="button" value="2" onclick="insert(2)">
+                    <input class="btn" type="button" value="00" onclick="insert('00')">
+                </div>
+                <div class="col">
+                    <input class="btn" type="button" value="3" onclick="insert(3)">
+                    <input class="btn" type="button" value="." onclick="insert('.')">
+                </div>
+                <div class="col">
+                    <input class="btn big" type="button" value="=" onclick="calc()">
+                </div>
+            </div>
+        </div>
+        <script src="./js/master.js"></script>
+    </div>
+</body>
+</html>
